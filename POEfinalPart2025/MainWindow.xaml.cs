@@ -242,7 +242,7 @@ namespace POE
                 return;
             }
 
-            if (input.Contains("show activity log"))
+            if (input.Contains("display") && input.Contains("activity log")|| input.Contains("show") && input.Contains("activity log") || input.Contains("View") && input.Contains("activity log")||input.Contains("activity log"))
             {
                 if (activityLog.Count == 0)
                 {
@@ -298,7 +298,7 @@ namespace POE
                 }
             }
 
-            ChatList.Items.Add("❓ I didn't understand that. Try asking about 'password', 'start quiz', or 'add task'.");
+            ChatList.Items.Add("❓ I didn't understand that. Try asking about 'password','phishing','browsing','privacy', 'start quiz','activity log', or 'add task'.");
         }
 
         //Commecing Multiple choice quiz
