@@ -301,6 +301,8 @@ namespace POE
             ChatList.Items.Add("❓ I didn't understand that. Try asking about 'password', 'start quiz', or 'add task'.");
         }
 
+        //Commecing Multiple choice quiz
+
         private void StartMultipleChoiceQuiz()
         {
             quizActive = true;
@@ -309,6 +311,8 @@ namespace POE
             ChatList.Items.Add("🧠 Starting Multiple Choice quiz. Type 1, 2, 3, or 4.");
             AskMultipleChoiceQuestion();
         }
+
+        //Commecing True or false quiz
 
         private void StartTrueFalseQuiz()
         {
@@ -348,6 +352,8 @@ namespace POE
             var (question, _) = trueFalseQuestions[quizIndex];
             ChatList.Items.Add($"❓ {question} (True/False)");
         }
+
+        //Chatbot responses
 
         private void GiveResponse(string keyword)
         {
