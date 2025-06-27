@@ -106,7 +106,7 @@ namespace POE
         {
             try
             {
-                using SoundPlayer player = new SoundPlayer("Greeting.wav");
+                using SoundPlayer player = new SoundPlayer("C:\\Users\\yusuf\\source\\repos\\POEfinalPart2025\\Greeting.wav");
                 player.Play();
             }
             catch
